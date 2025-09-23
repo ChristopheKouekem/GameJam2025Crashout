@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -8,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float blockRange = 1.5f; // Reichweite zum Blocken
     private int currentLane = 2;   // Start in der Mitte (0-4)
     private Vector3 targetPosition;
+    public bool canmove = true;
+
 
     void Start()
     {
@@ -37,18 +40,33 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
+
     void HandleInput()
     {
-        if (Input.GetKeyDown(KeyCode.RightArrow) && currentLane < laneCount - 1)
+        if (Input.GetKeyDown(KeyCode.RightArrow) && currentLane < laneCount - 1 && canmove == true)
         {
             currentLane++;
             SetTargetPosition();
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow) && currentLane > 0)
+        else if (Input.GetKeyDown(KeyCode.LeftArrow) && currentLane > 0 && canmove == true)
         {
             currentLane--;
             SetTargetPosition();
         }
+    }
+
+    public void test()
+    {
+        StartCoroutine(DisablePlayerMovement());
+    }
+    public IEnumerator DisablePlayerMovement()
+    {
+        canmove = false;
+        yield return new WaitForSeconds(0.5f); // waits for customizable duration
+        Debug.Log("Test");
+        canmove = true;
+
     }
 
     void SetTargetPosition()
@@ -56,6 +74,7 @@ public class PlayerController : MonoBehaviour
         targetPosition = transform.position;
         targetPosition.x = (currentLane - (laneCount / 2)) * laneWidth;
     }
+
 
     void Block()
     {
