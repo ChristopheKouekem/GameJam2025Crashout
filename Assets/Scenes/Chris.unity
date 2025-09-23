@@ -151,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   laneWidth: 2
   laneCount: 5
-  moveSpeed: 5
+  moveSpeed: 20
   blockRange: 1.5
 --- !u!212 &663488721
 SpriteRenderer:

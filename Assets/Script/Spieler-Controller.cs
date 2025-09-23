@@ -19,14 +19,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!GameManager.Instance.IsRunning) return;
+        //if (!GameManager.Instance.IsRunning) return;
 
         HandleInput();
 
         // Smooth Movement zur Zielposition
         transform.position = Vector3.MoveTowards(
-            transform.position, 
-            targetPosition, 
+            transform.position,
+            targetPosition,
             moveSpeed * Time.deltaTime
         );
 
