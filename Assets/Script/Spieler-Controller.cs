@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //if (!GameManager.Instance.IsRunning) return;
+        if (!GameManager.Instance.IsRunning) return;
 
         HandleInput();
 

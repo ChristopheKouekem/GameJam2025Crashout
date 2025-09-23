@@ -19,11 +19,11 @@ public class Enemy : MonoBehaviour
         if (isBlocked) return;
 
         // Richtung Spieler
-        transform.position = Vector3.MoveTowards(
-            transform.position,
-            player.transform.position,
-            speed * Time.deltaTime
-        );
+        // transform.position = Vector3.MoveTowards(
+        //     transform.position,
+        //     player.transform.position,
+        //     speed * Time.deltaTime
+        // );
 
         // Wenn nah genug -> Player stirbt
         float distance = Vector3.Distance(transform.position, player.transform.position);
