@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5195845884635999483}
   - component: {fileID: 7930116280195015929}
   - component: {fileID: -6465930550260874462}
-  - component: {fileID: 9072394448879855684}
+  - component: {fileID: 4416026662357001994}
   m_Layer: 0
   m_Name: Spruch_1_0
   m_TagString: FallingText
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.89, y: 1.21, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
+  m_LocalScale: {x: 0.13350946, y: 0.14759396, z: 0.08}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -130,8 +130,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallSpeed: 2
---- !u!61 &9072394448879855684
-BoxCollider2D:
+--- !u!58 &4416026662357001994
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -164,15 +164,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16.89, y: 11.46}
-    newSize: {x: 16.89, y: 11.46}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 16.89, y: 11.46}
-  m_EdgeRadius: 0
+  m_Offset: {x: 1.8891983, y: -1.7861269}
+  m_Radius: 1.2710328

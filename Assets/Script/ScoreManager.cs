@@ -4,7 +4,7 @@ using TMPro; // Falls du TextMeshPro benutzt
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
-    private int score = 0;
+    public int score = 0;
 
     public TMP_Text scoreText; // Im Inspector zuweisen
 
@@ -18,6 +18,7 @@ public class ScoreManager : MonoBehaviour
         score += points;
         UpdateUI();
     }
+
 
     void UpdateUI()
     {

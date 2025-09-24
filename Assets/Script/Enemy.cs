@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class Enemy : MonoBehaviour
 {
     public float speed = 2f;
@@ -8,6 +9,7 @@ public class Enemy : MonoBehaviour
     private PlayerController player;
     private ScoreManager scoreManager;
 
+    [System.Obsolete]
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
@@ -29,10 +31,16 @@ public class Enemy : MonoBehaviour
         float distance = Vector3.Distance(transform.position, player.transform.position);
         if (distance < 0.5f)
         {
-            GameManager.Instance.GameOver();
             Destroy(gameObject);
         }
     }
+
+
+    public void NudgeDown(float amount = 0.5f)
+    {
+        transform.position += Vector3.down * amount;
+    }
+
 
     public void Blocked()
     {
@@ -40,4 +48,14 @@ public class Enemy : MonoBehaviour
         scoreManager.AddScore(3);
         Destroy(gameObject);
     }
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            GameManager.Instance.GameOver();
+        }
+    }
+
 }

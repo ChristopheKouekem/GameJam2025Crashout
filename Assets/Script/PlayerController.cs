@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -10,6 +11,8 @@ public class PlayerController : MonoBehaviour
     private int currentLane = 2;   // Start in der Mitte (0-4)
     private Vector3 targetPosition;
     public bool canmove = true;
+    private int hitCount = 0;
+    public int maxHits = 5;
 
 
     void Start()
@@ -20,6 +23,7 @@ public class PlayerController : MonoBehaviour
         transform.position = targetPosition;
     }
 
+    [System.Obsolete]
     void Update()
     {
         if (!GameManager.Instance.IsRunning) return;
@@ -69,13 +73,15 @@ public class PlayerController : MonoBehaviour
 
     }
 
+
+
     void SetTargetPosition()
     {
         targetPosition = transform.position;
         targetPosition.x = (currentLane - (laneCount / 2)) * laneWidth;
     }
 
-
+    [System.Obsolete]
     void Block()
     {
         // Alle Gegner in Szene finden
@@ -100,4 +106,5 @@ public class PlayerController : MonoBehaviour
 
         Debug.Log("Block ausgeführt, aber kein Gegner getroffen.");
     }
+
 }
