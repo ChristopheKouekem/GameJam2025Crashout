@@ -417,8 +417,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.43320182, y: -0.4026224}
-  m_Radius: 0.061702758
+  m_Offset: {x: -1.6673054, y: -7.391222}
+  m_Radius: 2.2622075
 --- !u!1 &621049598
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,8 +603,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!58 &663488724
-CircleCollider2D:
+--- !u!70 &663488724
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -637,8 +637,9 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.5849898, y: 5.4584823}
-  m_Radius: 2.9465282
+  m_Offset: {x: 0.12990834, y: 2.1380873}
+  m_Size: {x: 5.5725965, y: 13.184224}
+  m_Direction: 0
 --- !u!1 &967702921
 GameObject:
   m_ObjectHideFlags: 0
@@ -789,6 +790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
+  timer: 0
   scoreText: {fileID: 967702923}
 --- !u!1 &1074915353
 GameObject:
@@ -1135,8 +1137,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -4.3320074, y: -5.7267876}
-  m_Radius: 1.5333563
+  m_Offset: {x: -2.8865657, y: -6.0241857}
+  m_Radius: 2.681399
 --- !u!1 &1194790882
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,8 +1303,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.41281468, y: -0.39752543}
-  m_Radius: 0.107571065
+  m_Offset: {x: -0.7822736, y: -5.559598}
+  m_Radius: 1.39644
 --- !u!1 &1599585223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,8 +1469,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.42300832, y: -0.40262198}
-  m_Radius: 0.10247481
+  m_Offset: {x: -0.370986, y: -6.564503}
+  m_Radius: 1.6216137
 --- !u!1 &1852297090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,8 +1772,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.3873319, y: -0.36694646}
-  m_Radius: 0.12285972
+  m_Offset: {x: -1.7439269, y: -5.3987527}
+  m_Radius: 2.1145666
 --- !u!1 &2061378165
 GameObject:
   m_ObjectHideFlags: 0

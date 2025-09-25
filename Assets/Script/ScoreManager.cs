@@ -19,15 +19,37 @@ public class ScoreManager : MonoBehaviour
     {
         score += points;
         UpdateUI();
-        if (score >= 10)
+        if (score >= 10 && score <= 15)
         {
             scoreText.text = "Nice!";
         }
 
-        if (timer == 11)
+        if (timer >= 11 && timer <= 49)
         {
             UpdateUI();
         }
+
+        if (score == 50)
+        {
+            scoreText.text = "Super Nice!";
+        }
+
+        if (score == 100)
+        {
+            scoreText.text = "Excellent!!";
+        }
+
+        if (score == 30)
+        {
+            scoreText.text = "Crazy!!";
+        }
+
+        if (score == 70)
+        {
+            scoreText.text = "Goat?!";
+        }
+
+
 
     }
 
