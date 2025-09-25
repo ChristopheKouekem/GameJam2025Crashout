@@ -52,8 +52,10 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        Debug.Log("Hit");
+        if (collision.gameObject.CompareTag("Bitte klapp"))
         {
+            Debug.Log("Test");
             GameManager.Instance.GameOver();
         }
     }
