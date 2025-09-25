@@ -41,6 +41,6 @@ public class GameManager : MonoBehaviour
         IsRunning = false;
         Time.timeScale = 0f;
         Debug.Log("GAME OVER! Final Score: " + ScoreManager.Instance.GetScore());
-        // GameOver UI noch einfügen
+        // UI fehlt noch
     }
 }
