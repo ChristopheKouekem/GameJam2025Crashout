@@ -6,6 +6,8 @@ public class Enemy : MonoBehaviour
     public float speed = 2f;
     private bool isBlocked = false;
 
+    public bool tot;
+
     private PlayerController player;
     private ScoreManager scoreManager;
 
@@ -53,10 +55,11 @@ public class Enemy : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("Hit");
-        if (collision.gameObject.CompareTag("Bitte klapp"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             Debug.Log("Test");
             GameManager.Instance.GameOver();
+            tot = true;
         }
     }
 

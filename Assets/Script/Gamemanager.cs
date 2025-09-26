@@ -3,7 +3,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-    public bool IsRunning { get; private set; } = true;
+    public bool IsRunning { get; set; } = true;
     public float fallSpeed = 1f;
     public float speedIncreaseRate = 0.1f; // Wie viel das Spiel schneller wird
     public float speedIncreaseInterval = 10f;

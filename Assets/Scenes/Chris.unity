@@ -200,7 +200,7 @@ Transform:
   m_GameObject: {fileID: 40362099}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0008, y: -0.0306, z: 0}
+  m_LocalPosition: {x: -0.01, y: -0.01, z: 0}
   m_LocalScale: {x: 0.92843854, y: 0.9367806, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -356,6 +356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  tot: 0
 --- !u!50 &473990924
 Rigidbody2D:
   serializedVersion: 5
@@ -452,7 +453,7 @@ MonoBehaviour:
   laneWidth: 2.35
   laneCount: 5
   spawnY: 3.7
-  spawnInterval: 0.7
+  spawnInterval: 1
 --- !u!4 &621049600
 Transform:
   m_ObjectHideFlags: 0
@@ -1076,6 +1077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  tot: 0
 --- !u!50 &1126012537
 Rigidbody2D:
   serializedVersion: 5
@@ -1242,6 +1244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  tot: 0
 --- !u!50 &1194790886
 Rigidbody2D:
   serializedVersion: 5
@@ -1408,6 +1411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  tot: 0
 --- !u!50 &1599585227
 Rigidbody2D:
   serializedVersion: 5
@@ -1711,6 +1715,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  tot: 0
 --- !u!50 &2019332292
 Rigidbody2D:
   serializedVersion: 5

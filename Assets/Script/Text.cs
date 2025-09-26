@@ -45,7 +45,7 @@ public class FallingText : MonoBehaviour
                 {
                     if (Mathf.Abs(enemy.transform.position.x - playerLaneX) < 0.2f)
                     {
-                        enemy.NudgeDown(2f);
+                        enemy.NudgeDown(1f);
                     }
                 }
             }
